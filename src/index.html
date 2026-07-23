@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <title>To-do List</title>
+</head>
+
+<body>
+  <div class="w-full h-full bg-[#faf7f5] dark:bg-[#0f172a] flex flex-col font-audiowide">
+    <!-- Navbar -->
+    <nav
+      class="w-[99%] h-fit px-6 py-5 bg- mt-5 mx-3 rounded-2xl flex flex-row items-center justify-between bg-[#efeae6] dark:bg-[#0c1425] z-1000">
+      <div class="flex flex-row gap-5 items-center">
+        <img src="/assets/logo.png" alt="logo" class="size-10">
+        <p class="text-2xl font-mono">Todo</p>
+      </div>
+      <div class="gap-5 flex flex-row">
+        <a href="/register" class="btn  btn-primary">Register</a>
+        <a href="/sign-in" class="btn btn-soft btn-info">Sign In</a>
+      </div>
+    </nav>
+    <!-- Body -->
+    <div class="w-full h-fit bg-transparent flex flex-col items-center justify-center">
+
+      <div class="w-full min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center px-4 mt-4 gap-6 lg:gap-9">
+        <!-- Section 1 -->
+        <img src="/assets/logo.png" alt="logo"
+          class="w-48 sm:w-64 md:w-80 lg:w-100 h-auto object-contain transition-all duration-200">
+        <p
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl max-w-xs sm:max-w-xl lg:max-w-3xl text-center font-bold leading-tight">
+          A simple, intuitive to-do list designed to keep you focused on what matters.
+        </p>
+        <a href="/register"
+          class="btn btn-primary h-14 sm:h-16 lg:h-20 w-48 sm:w-60 lg:w-[20%] text-xl sm:text-2xl lg:text-4xl rounded-2xl sm:rounded-3xl flex items-center justify-center">
+          Get Started
+        </a>
+      </div>
+
+      <section class="h-fit w-fit flex flex-col items-center mb-20">
+        <section class="py-20 px-6 max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4 dark:text-white text-black">
+            Everything you need to get things done
+          </h2>
+          <p class="dark:text-gray-400 text-gray-600 mb-12 max-w-2xl mx-auto">
+            Powerful features designed to keep your daily tasks organized and stress free.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- Features -->
+            <!-- Feature 1 -->
+            <div
+              class="cursor-pointer dark:bg-[#0f172a] bg-[#efeae6] border dark:border-gray-800 border-gray-200 p-6 rounded-2xl text-left dark:hover:border-blue-500 hover:border-blue-300 transition duration-300">
+              <div
+                class="w-12 h-12 dark:bg-blue-600/20 bg-blue-300/20 text-blue-500 rounded-xl flex items-center justify-center mb-4 text-2xl font-bold">
+                ⚡
+              </div>
+              <h3 class="text-xl font-bold mb-2 dark:text-white text-black">Fast & Simple</h3>
+              <p class="dark:text-gray-400 text-gray-600 text-sm leading-relaxed">
+                Add, complete, and manage your daily tasks in seconds with an intuitive interface.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div
+              class="cursor-pointer dark:bg-[#0f172a] bg-[#efeae6] border dark:border-gray-800 border-gray-200 p-6 rounded-2xl text-left dark:hover:border-blue-500 hover:border-blue-300 transition duration-300">
+              <div
+                class="w-12 h-12 dark:bg-blue-600/20 bg-blue-300/20 text-blue-500 rounded-xl flex items-center justify-center mb-4 text-2xl font-bold">
+                🎯
+              </div>
+              <h3 class="text-xl font-bold mb-2 dark:text-white text-black">Stay Focused</h3>
+              <p class="dark:text-gray-400 text-gray-600 text-sm leading-relaxed">
+                Organize your work with categories and priorities to focus on what matters most today.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="cursor-pointer dark:bg-[#0f172a] bg-[#efeae6] border dark:border-gray-800 border-gray-200 p-6 rounded-2xl text-left dark:hover:border-blue-500 hover:border-blue-300 transition duration-300">
+              <div
+                class="w-12 h-12 dark:bg-blue-600/20 bg-blue-300/20 text-blue-500 rounded-xl flex items-center justify-center mb-4 text-2xl font-bold">
+                🔒
+              </div>
+              <h3 class="text-xl font-bold mb-2 dark:text-white text-black">Secure & Synced</h3>
+              <p class="dark:text-gray-400 text-gray-600 text-sm leading-relaxed">
+                Your data is safely stored in your account and accessible whenever you log in.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="border-y border-gray-800 py-1 h-fit w-fit ">
+          <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+            <div>
+              <h4 class="text-4xl font-extrabold text-blue-500">100%</h4>
+              <p class="text-gray-400 text-sm mt-1">Free to Use</p>
+            </div>
+            <div>
+              <h4 class="text-4xl font-extrabold text-blue-500">Fast</h4>
+              <p class="text-gray-400 text-sm mt-1">Real-time Updates</p>
+            </div>
+            <div>
+              <h4 class="text-4xl font-extrabold text-blue-500">24/7</h4>
+              <p class="text-gray-400 text-sm mt-1">Access Anywhere</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20 px-6 text-center max-w-4xl mx-auto">
+          <div
+            class="bg-linear-to-r dark:from-blue-900/40 dark:to-indigo-900/40 from-blue-300/40 to-indigo-300/40 border border-blue-500/30 p-10 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-4 dark:text-white text-gray-700">
+              Ready to boost your productivity?
+            </h2>
+            <p class="dark:text-gray-300 text-gray-600 mb-8 text-sm sm:text-base">
+              Join today and take control of your daily schedule with ease.
+            </p>
+            <a href="/register"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow-lg shadow-blue-600/30">
+              Create Free Account
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p>© 2026 Todo. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="dark:hover:text-gray-300 hover:text-gray-800 transition">Privacy Policy</a>
+            <a href="#" class="dark:hover:text-gray-300 hover:text-gray-800 transition">Terms of Service</a>
+            <a href="#" class="dark:hover:text-gray-300 hover:text-gray-800 transition">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
